@@ -51,7 +51,7 @@ print(f"Winner: Khan")
 # finished reading CSV
 
 #Define new file and file path
-export_path = "C:/Users/DanMona/Desktop/SMU_Homework/SMU Assignments/Unit_03_Python/main.txt"
+export_path = "C:/Users/DanMona/Desktop/SMU_Homework/SMU Assignments/Unit_03_Python/PyPoll/main.txt"
 
 #Open newly created file
 with open(export_path,'w') as writer:
