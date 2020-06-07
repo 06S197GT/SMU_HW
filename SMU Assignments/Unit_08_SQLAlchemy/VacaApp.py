@@ -1,16 +1,19 @@
-import datetime as dt
+#Import dependencies
 import numpy as np
 import pandas as pd
 import json
 
-#SQL Class
+#Import Flask and, Jsonify and my Created class
 from VacaHelper import VacaHelper
 from flask import Flask, jsonify
 
+#Setup Flask
 app = Flask(__name__)
 
+#Call my class
 vacaHelper = VacaHelper()
 
+#App routes
 @app.route("/")
 def home_page():
     return (f"Optional pages include:<br/>" 
@@ -60,5 +63,6 @@ def filter_temp_range(start_date,end_date):
     print("Server received request for 'multi-filterd TObs' page...")
     return(jsonify(json.loads(data.to_json(orient='records'))))
 
+#Run Flask
 if __name__ =="__main__":
     app.run(debug=True)
