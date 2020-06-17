@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<!--Navigation Bar-->
+
+
+<body class="body">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px;">
+        <a class="navbar-brand latitude nav-item active mr-auto" href="index.html">Lattitude<span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Summary</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="subtitle">Climate Analysis Investigation</h2>
+                    </div>
+                    <div class="card-body ">
+                        <img class="image_fit image_inline" src="../Unit_09_Web/Resources/assets/images/climate_model.png " width=500px height=relative>
+                        <h4 class="card_title">Summary:</h4>
+                        <p class="pg-text">The purpose behind this project was to determine whether there was a correlation between weather and latitude. To begin, we first used the OpenWeatherAPI to create a dataframe of over 500 randomized cities around the globe.<br>                            Once the dataset was assembled, we used the Python MatPlotLib library to create plots of the weather variables to show how they relate to latitude coordinates of any given location. Of the variables included were: temperature,
+                            wind speed, cloudiness and humidity.<br> This site was created to provide an interactive source for all of the data gathered and visualizations created. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="subtitle">Visualizations</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Nested Bootstrap Grid for additional layout control -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Click for larger version...</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="../Unit_09_Web/Resources/assets/images/Fig1.png">
+                                        <img class="image_inline" src="../Unit_09_Web/Resources/assets/images/Fig1.png">
+                                    </a>
+                                    <p class="subtitle">Figure 1</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="../Unit_09_Web/Resources/assets/images/Fig2.png">
+                                        <img class="image_inline" src="../Unit_09_Web/Resources/assets/images/Fig2.png">
+                                    </a>
+                                    <p class="subtitle">Figure 2</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="../Unit_09_Web/Resources/assets/images/Fig3.png">
+                                        <img class="image_inline" src="../Unit_09_Web/Resources/assets/images/Fig3.png">
+                                    </a>
+                                    <p class="subtitle">Figure 3</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="../Unit_09_Web/Resources/assets/images/Fig4.png">
+                                        <img class="image_inline" src="../Unit_09_Web/Resources/assets/images/Fig4.png">
+                                    </a>
+                                    <p class="subtitle">Figure 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="alert footer_override">
+            <p class="text_secondary">Made by: Daniel Carmona for SMU Data Science Bootcamp 2020</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

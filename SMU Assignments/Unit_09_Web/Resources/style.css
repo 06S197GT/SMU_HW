@@ -1,0 +1,78 @@
+        .card_header_override {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .latitude {
+            text-decoration: whitesmoke;
+            text-transform: capitalize;
+            font-size: 50px;
+            font-family: 'Staatliches', cursive;
+            font-stretch: ultra-expanded;
+        }
+        
+        .image_inline {
+            width: 100%;
+        }
+        
+        .image_fit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: relative;
+            max-width: 600px;
+        }
+        
+        .graph-md {
+            float: left;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: relative;
+            max-width: 850px;
+            padding-right: 10px;
+        }
+        
+        .footer_override {
+            position: static;
+            bottom: 0;
+            left: 20px;
+            right: 0;
+            z-index: zindex-fixed;
+        }
+        
+        .card_title {
+            font-weight: bold;
+            font-size: x-large;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .pg-text {
+            font-size: large;
+        }
+        
+        .image_clickable {
+            cursor: pointer;
+        }
+        
+        .html {
+            position: relative;
+            min-height: 100%;
+        }
+        
+        .body {
+            background-color: darkslategray;
+            margin-bottom: 109px;
+        }
+        
+        .ttable {
+            text-align: center;
+        }
+        
+        .text_secondary {
+            text-decoration: whitesmoke;
+        }
