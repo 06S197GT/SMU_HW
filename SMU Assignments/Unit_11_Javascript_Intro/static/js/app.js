@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         var inputText = d3.select("#datetime");
         //Get value of input
         var userInput = inputText.property("value");
-        //filer the data based on input value
-        var filteredData = data.filter(date => date.datetime === userInput);
+        //filer the data based on input value as date time
+        var filteredData = data.filter(date => Date.parse(date.datetime) === Date.parse(userInput));
         //remove all rows and recreate table
         if (userInput !== " ") {
             d3.selectAll("td").remove();
