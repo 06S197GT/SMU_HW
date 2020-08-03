@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leaflet Step-1</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <!-- Marker Cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+    <!-- Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css" integrity="sha384-t87SWLASAVDfD3SOypT7WDQZv9X6r0mq1lMEc6m1/+tAVfCXosegm1BvaIiQm3zB" crossorigin="anonymous">
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Marker Cluster JS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+</head>
+
+<body class="body">
+    <div class="card">
+        <div>
+            <nav class="navbar navbar-dark navback">
+                <a class="navbar-brand">
+                    <img src="Images/seismic_wave.png" width="50" height="50" class="d-inline-block align-top">
+                    <h1 class="d-inline-block align-top">Seismic Data</h1>
+                </a>
+                <form class="form-inline">
+                    <span class="navbar-text">Filter Quake Data: </span>
+                    <select id="timeFilter" data-dropup-auto="false">
+                    <option value="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson">Past Hour</option>
+                    <option value="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson">Past Day</option>
+                    <option value="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson" selected>Past Week</option>
+                    <option value="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson">Past Month</option>  
+                    </select>
+                </form>
+            </nav>
+        </div>
+    </div>
+
+    <!-- The div that holds our map -->
+    <div id="mapParent"></div>
+</body>
+
+</html>
